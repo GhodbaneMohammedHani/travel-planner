@@ -43,7 +43,7 @@ export default function GlobePage(){
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                     <div className="lg:col-span-2 bg-white rounded-xl shadow-lg overflow-hidden">
                         <div className="p-6">
-                            <h2 className=" text-2xl font-semibold mb-4">See where you've been</h2>
+                            <h2 className=" text-2xl font-semibold mb-4">See where you&apos;ve been</h2>
                             <div className="h-150 w-full relative">
                                { isLoading ? (<div className='flex items-center justify-center h-full'>
                                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>

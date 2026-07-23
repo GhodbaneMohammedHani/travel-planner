@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-// @ts-expect-error
+// @ts-expect-error: CSS file import without strict type definition
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { auth } from "@/auth";
@@ -31,7 +31,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <Navbar session={session}/>
+        <Navbar session={session} />
         {children}
       </body>
     </html>
