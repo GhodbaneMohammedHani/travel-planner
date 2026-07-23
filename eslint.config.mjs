@@ -10,6 +10,10 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  // Ignore auto-generated code and build outputs from linting
+  {
+    ignores: ["app/generated/**", ".next/**", "node_modules/**"],
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
