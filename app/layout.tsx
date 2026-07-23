@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-// @ts-ignore - Ignore CSS import side-effect declaration in VS Code
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { auth } from "@/auth";
