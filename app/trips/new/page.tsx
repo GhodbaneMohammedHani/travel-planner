@@ -7,7 +7,6 @@ import { UploadButton } from "@/lib/actions/uploadthing";
 import { cn } from "@/lib/utils";
 import { useState, useTransition } from "react";
 import Image from "next/image";
-import { format } from "path";
 export default function NewTrip() {
     const [isPending, startTransition] = useTransition( )
     const [imageUrl, setImageUrl] = useState<string | null>(null);

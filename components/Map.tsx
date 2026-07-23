@@ -1,7 +1,6 @@
 "use client"
 import { Location } from "@/app/generated/prisma";
 import {GoogleMap,Marker,useLoadScript} from "@react-google-maps/api"
-import { Key } from "lucide-react";
 interface MapProps {
     itineraries: Location[];
 }

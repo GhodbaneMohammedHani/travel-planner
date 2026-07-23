@@ -4,7 +4,6 @@ import { auth } from "@/auth";
 import { prisma } from "../prisma";
 import { redirect } from "next/navigation";
 async function geocodeAddress(address: string) {
-    const apiKey = process.env.GOOGLE_MAPS_API_KEY!;
     const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
     const response = await fetch(url,{
     headers: { 'User-Agent': 'MyApp/1.0' } // Required by OpenStreetMap

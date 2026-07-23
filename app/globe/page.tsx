@@ -1,6 +1,6 @@
 "use client"
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Key, MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react'
 import Globe, {GlobeMethods} from 'react-globe.gl'
 export interface transformedLocation {

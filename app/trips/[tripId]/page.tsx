@@ -1,6 +1,5 @@
 import { prisma } from "@/lib/prisma"
 import { auth } from "@/auth"
-import { Trip } from "@/app/generated/prisma"
 import TripDetailClient from "@/components/trip-detail"
 export default async function TripDetail({params}:{
     params:Promise<{tripId:string}>}) {

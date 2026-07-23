@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-// @ts-ignore
+// @ts-expect-error
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { auth } from "@/auth";
