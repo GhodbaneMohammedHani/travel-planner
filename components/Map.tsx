@@ -4,9 +4,11 @@ import {GoogleMap,Marker,useLoadScript} from "@react-google-maps/api"
 interface MapProps {
     itineraries: Location[];
 }
+const libraries: ("places" | "drawing" | "geometry")[] = ["places"];
 export default function Map({itineraries} : MapProps){
     const {isLoaded,loadError} = useLoadScript({
-        googleMapsApiKey:"AIzaSyDOTEcUhoGaYpo5eT7l8hYmlHiegnhdtGw"
+        googleMapsApiKey:process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "",
+    libraries,
     });
     if (loadError) return <div>Error Loading maps</div>
     if (!isLoaded) return <div> Loading maps...</div>;
